@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Login From</title>
+    <style>
+        body{
+            
+            background-image: url("/SchoolAward/Assets/YUGJXe.webp")
+
+    }
+    h1{
+       
+        display: flex;
+        justify-content: center;
+    }
+        .LoginFrom{
+
+    margin-top:5%;
+  font-weight: bolder;
+    width: 50vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    margin-left: 25%;
+    margin-top: auto;
+    background: rgb(122, 121, 121);
+  background: rgba(122, 121, 121, 0.5);
+}
+.form{
+    margin-top: 4%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.lastName {
+    margin-top: 6%;
+}
+.user{
+    margin-top: 6%;
+}
+.create{
+    margin-top: 6%;
+}
+.pass{
+    margin-top: 6%;
+}
+.gender{
+    margin-top: 5%;
+}
+.degree{
+    margin-top: 5%;
+}
+.address{
+    margin-top: 5%;
+}
+.state{
+    margin-top: 5%;
+}
+.button{
+    
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bolder;
+}
+
+    </style>
+</head>
+<body>
+    <h1>LoginForm</h1>
+    <div class="LoginFrom">
+    <form class="form">
+    <div class="fistName">
+        <label>First Name</label>
+        <input type="text" value="" id="firstName" required>
+    </div>
+    <div class="lastName">
+        <label>Last Name</label>
+        <input type="text" id="lastName" value="" required>
+    </div>
+    <div class="user">
+        <label>User Name</label>
+        <input type="text" id="userName">
+    </div>
+    <div class="creat">
+        <label>Create Password</label>
+        <input type="password" id="createPassword">
+    </div>
+    <div class="pass">
+        <label>Confirm Password</label>
+        <input type="password" id="confirmPassword">
+    </div>
+    
+    <div class="gender">
+        <label for="gender">Gender</label><br>
+        <input type="radio" name="gender" value="male" id="male" checked>Male <br>
+        <input type="radio" name="gender" value="female" id="female" >Female <br>
+    </div> 
+    <div class="degree">
+        <label>select degree</label> <br>
+        <input type="checkbox" id="B-tech" name="degree"><label>B-Tech</label> <br>
+        <input type="checkbox" id="M-tech" name="degree"><label>M-Tech</label>
+    </div>  
+    <div class="address">
+        <label for="">Address</label>
+        <textarea name="textarea" id="textarea" cols="30" rows="2">Address:</textarea>
+    </div>   
+    <div class="state">
+        <label for="">State</label>
+        <select name="" id="">
+            <option value="maharastra">Maharashtra</option>
+            <option value="karnataka">Karnataka</option>
+        </select>
+    </div> 
+    <div class="button">
+        <input type="submit" value="Submit form" id="submit"> <br>
+        <input type="reset" value="Reset form" id="reset">
+        </div>
+</form>
+</div>
+<script>
+    function onSubmit(){
+            alert(" form Submitted")
+        }
+        let button = document.getElementById("submit")
+        button.addEventListener("click",onSubmit)
+
+</script>
+</body>
+</html>

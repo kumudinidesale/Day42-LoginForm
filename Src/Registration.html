@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Registration From</title>
+    <style>
+        body{
+            
+            background-image: url("/SchoolAward/Assets/YUGJXe.webp")
+
+    }
+    h1{
+       
+        display: flex;
+        justify-content: center;
+    }
+        .LoginFrom{
+
+    margin-top:5%;
+  font-weight: bolder;
+    width: 50vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    margin-left: 25%;
+    margin-top: auto;
+    background: rgb(122, 121, 121);
+  background: rgba(122, 121, 121, 0.5);
+}
+.form{
+    margin-top: 4%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+.lastName {
+    margin-top: 10%;
+}
+.user{
+    margin-top: 10%;
+}
+.pass{
+    margin-top: 10%;
+}
+.creat{
+    margin-top: 10%;
+}
+.degree{
+    margin-top: 10%;
+}
+
+.button{
+    
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bolder;
+
+
+
+}
+
+    </style>
+</head>
+<body>
+    <h1>RegistrationForm</h1>
+    <div class="LoginFrom">
+    <form class="form">
+    <div class="fistName">
+        <label>FirstName</label>
+        <input type="text" value="" id="firstName" required>
+    </div>
+    <div class="lastName">
+        <label>LastName</label>
+        <input type="text" id="lastName" value="" required>
+    </div>
+    <div class="user">
+        <label>Email</label>
+        <input type="text" id="userName" class="user">
+    </div>
+    <div class="creat">
+        <label>CreatePassword</label>
+        <input type="password" id="createPassword" name="creat">
+        
+    </div>
+    <div class="pass">
+        <label>ConfirmPassword</label>
+        <input type="password" id="confirmPassword">
+    </div>
+    
+    
+    <div class="degree">
+        <label></label> <br>
+       <input type="checkbox" id="M-tech" name="degree"><label>I accept the Terms of Use & Privacy Policy</label>
+    </div>  
+   
+   
+    <div class="button">
+        <input type="submit" value="Register Now" id="submit"> <br>
+        <input type="reset" value="Reset form" id="reset">
+        </div>
+</form>
+</div>
+<script>
+    function onSubmit(){
+            alert("Registration Complited")
+        }
+        let button = document.getElementById("submit")
+        button.addEventListener("click",onSubmit)
+
+</script>
+</body>
+</html>
